@@ -1,0 +1,145 @@
+/* @define-color backgroundlight rgba(166,107,180,0.4); */
+
+@define-color backgroundlight rgba(166,166,166,0.25);
+
+@define-color backgrounddark rgba(36,36,36,0.8);
+
+@define-color textcolor1 #FFFFFF;
+
+* {
+  border: none;
+  font-size: 14px;
+  /* font-family: MesloLGM Nerd Font; */
+  border-radius: 8px;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#workspaces {
+  margin: 1px 15px;
+  padding: 0px 1px;
+  color: @textcolor1;
+}
+
+#workspaces button {
+  padding: 0px 5px;
+  margin: 2px 3px;
+  color: @textcolor1;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @textcolor1;
+  background: @backgroundlight;
+  min-width: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+  color: @textcolor1;
+  background: @backgroundlight;
+}
+
+tooltip {
+  background-color: @backgrounddark;
+  opacity: 0.9;
+  padding: 20px;
+  margin: 0px;
+}
+
+tooltip label {
+  color: @textcolor1;
+}
+
+#window {
+  background: @backgrounddark;
+  margin: 1px 0px 1px 15px;
+  padding: 0px 10px;
+  color: @textcolor1;
+}
+
+#idle_inhibitor {
+  background: @backgrounddark;
+  margin: 1px 0px 1px 15px;
+  padding: 0px 10px;
+  color: @textcolor1;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#tray {
+  background-color: @backgrounddark;
+  padding: 0px 10px;
+  margin: 1px 15px 1px 0px;
+}
+
+#clock {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+  padding: 0px 10px;
+  margin: 1px 5px 1px 0px;
+}
+
+#clock.calendar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#custom-power {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+  padding: 0px 7px 0px 10px;
+  margin: 1px 0px 1px 5px;
+}
+
+#backlight {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+  padding: 0px 8.5px 0px 10px;
+  margin: 1px 15px 1px 0px;
+}
+
+#pulseaudio {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+  padding: 0px 10px;
+  margin: 1px 15px 1px 0px;
+}
+
+#pulseaudio.muted {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+}
+
+#battery {
+  background-color: @backgrounddark;
+  color: @textcolor1;
+  padding: 0px 10px;
+  margin: 1px 15px 1px 0px;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @textcolor1;
+  background-color: @backgrounddark;
+}
+
+@keyframes blink {
+  to {
+    background-color: @backgrounddark;
+    color: @textcolor1;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

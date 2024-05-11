@@ -1,0 +1,84 @@
+{
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {},
+        "persistent-workspaces": {
+             "*": 4
+        }       
+    },
+
+    "hyprland/window": {
+        "separate-outputs": true,
+        "icon": true,
+        "icon-size": 16
+    },
+
+    "idle_inhibitor": { 
+      "format": "{icon}", 
+      "format-icons": { 
+      "activated": " ", 
+      "deactivated": " ",
+      "tooltip": false
+      } 
+    },
+
+    "clock": {
+        "format":"{:%R | %A | %d-%m-%Y}",
+        //"tooltip-format": "<tt><big>{calendar}</big></tt>"
+        "on-click": "yad --calendar --no-buttons --close-on-unfocus"
+    },
+
+    "custom/power": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "wlogout --protocol layer-shell"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "tooltip": false,
+        "format": "{icon}  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-alt": "{icon}  {time}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{volume}%  {icon}  {format_source}",
+        "format-bluetooth-muted": "   {icon}  {format_source}",
+        "format-muted": "   {format_source}",
+        "format-source": "{volume}%  ",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "tooltip": false,
+        "format-icons": ["󰛨 "]
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 6
+    }
+
+}

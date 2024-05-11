@@ -1,0 +1,25 @@
+
+{
+    "position": "bottom",
+
+    "include": ["~/.config/waybar/modules.json"],
+
+    "modules-left": [
+        "custom/power",
+        "idle_inhibitor",
+        "hyprland/window"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "tray",
+        "clock"
+    ]
+}
+
