@@ -28,7 +28,7 @@
     "clock": {
         "format":"{:%R | %A | %d-%m-%Y}",
         //"tooltip-format": "<tt><big>{calendar}</big></tt>"
-        "on-click": "yad --calendar --no-buttons --close-on-unfocus"
+        "on-click": "eww open --toggle calendar"
     },
 
     "custom/power": {

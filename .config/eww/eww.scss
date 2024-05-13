@@ -1,0 +1,18 @@
+
+.calendar {
+  border-radius: 2px;
+  padding: 3px 2px 0px 2px;
+  border: 2px solid #80A0C0;
+  background-color: #1E222A;
+  font-weight: 600;
+}
+
+.calendar.header {
+  border: 0px;
+}
+
+.calendar:selected {
+  color: white;
+  border-radius: 2px;
+  background: teal;
+}

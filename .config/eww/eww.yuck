@@ -1,0 +1,8 @@
+(defwindow calendar
+  :monitor 0
+  :geometry (geometry :x "1269px"
+                      :y "624px")
+(cal))
+
+(defwidget cal []
+  (calendar :halign "center" :valign "center" :class "cal"))
