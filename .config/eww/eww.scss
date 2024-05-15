@@ -1,6 +1,5 @@
 
 .calendar {
-  border-radius: 2px;
   padding: 3px 2px 0px 2px;
   border: 2px solid #80A0C0;
   background-color: #1E222A;
@@ -16,3 +15,17 @@
   border-radius: 2px;
   background: teal;
 }
+
+.desktopwidget {
+  background-color: rgba(0,0,0,0);
+  font-weight: 700;
+}
+
+.time {
+  font-size: 65px;
+}
+
+.date {
+  font-size: 28px;
+}
+

@@ -1,24 +1,22 @@
-/* @define-color backgroundlight rgba(166,107,180,0.4); */
 
-@define-color backgroundlight rgba(166,166,166,0.25);
+@define-color backgroundlight rgba(15,15,15,1);
 
-@define-color backgrounddark rgba(36,36,36,0.8);
+@define-color backgrounddark rgba(0,0,0,1);
 
-@define-color textcolor1 #FFFFFF;
+@define-color textcolor1 rgba(200, 200, 200, 1);
 
 * {
-  border: none;
+  font-weight: 500;
   font-size: 14px;
-  /* font-family: MesloLGM Nerd Font; */
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(60, 60, 60, 0.3);
 }
 
 #workspaces {
-  margin: 1px 15px;
+  margin: 1px 10px;
   padding: 0px 1px;
   color: @textcolor1;
 }
@@ -33,7 +31,7 @@ window#waybar {
 #workspaces button.active {
   color: @textcolor1;
   background: @backgroundlight;
-  min-width: 30px;
+  min-width: 25px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -55,14 +53,14 @@ tooltip label {
 
 #window {
   background: @backgrounddark;
-  margin: 1px 0px 1px 15px;
+  margin: 1px 0px 1px 10px;
   padding: 0px 10px;
   color: @textcolor1;
 }
 
 #idle_inhibitor {
   background: @backgrounddark;
-  margin: 1px 0px 1px 15px;
+  margin: 1px 0px 1px 10px;
   padding: 0px 10px;
   color: @textcolor1;
 }
@@ -74,7 +72,7 @@ window#waybar.empty #window {
 #tray {
   background-color: @backgrounddark;
   padding: 0px 10px;
-  margin: 1px 15px 1px 0px;
+  margin: 1px 10px 1px 0px;
 }
 
 #clock {
@@ -99,14 +97,14 @@ window#waybar.empty #window {
   background-color: @backgrounddark;
   color: @textcolor1;
   padding: 0px 8.5px 0px 10px;
-  margin: 1px 15px 1px 0px;
+  margin: 1px 10px 1px 0px;
 }
 
 #pulseaudio {
   background-color: @backgrounddark;
   color: @textcolor1;
   padding: 0px 10px;
-  margin: 1px 15px 1px 0px;
+  margin: 1px 10px 1px 0px;
 }
 
 #pulseaudio.muted {
@@ -118,7 +116,7 @@ window#waybar.empty #window {
   background-color: @backgrounddark;
   color: @textcolor1;
   padding: 0px 10px;
-  margin: 1px 15px 1px 0px;
+  margin: 1px 10px 1px 0px;
 }
 
 #battery.charging,
@@ -143,3 +141,4 @@ window#waybar.empty #window {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
