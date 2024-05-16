@@ -1,5 +1,4 @@
 * {
-  font-weight: bold;
 	background-image: none;
 	box-shadow: none;
   transition: 20ms;
@@ -10,55 +9,34 @@ window {
 }
 
 button {
-  font-size: 16px;
-  border-radius: 0;
-  color: #FFFFFF;
-	background-color: rgba(12, 12, 12, 0.3);
-	border: 3px solid #FFFFFF;
+  border-radius: 20px;
+  background-size: 45%;
+	background-color: #282B31;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 25%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 button:focus, button:active, button:hover {
-	background-color: #3700B3;
+	background-color: #61AFEF;
 	outline-style: none;
 }
 
 #lock {
-  margin: 10px;
-	border-radius: 20px;
-  background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+  background-image: url("/home/thorn/.config/wlogout/icons/lock.png");
 }
 
 #logout {
-  margin: 10px;
-	border-radius: 20px;
-  background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
-}
-
-#suspend {
-  margin: 10px;
-	border-radius: 20px;
-  background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
-}
-
-#hibernate {
-  margin: 10px;
-	border-radius: 20px;
-  background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+  background-image: url("/home/thorn/.config/wlogout/icons/logout.png");
 }
 
 #shutdown {
-  margin: 10px;
-	border-radius: 20px;
-  background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+  background-image: url("/home/thorn/.config/wlogout/icons/shutdown.png");
 }
 
 #reboot {
-  margin: 10px;
-	border-radius: 20px;
-  background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+  background-image: url("/home/thorn/.config/wlogout/icons/restart.png");
 }
 

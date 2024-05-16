@@ -6,7 +6,7 @@
         "format": "{}",
         "format-icons": {},
         "persistent-workspaces": {
-             "*": 4
+             "*": 3
         }       
     },
 
@@ -20,7 +20,7 @@
       "format": "{icon}", 
       "format-icons": { 
       "activated": " ", 
-      "deactivated": " ",
+      "deactivated": " ",
       "tooltip": false
       } 
     },
@@ -33,7 +33,7 @@
     "custom/power": {
         "format": " ",
         "tooltip": false,
-        "on-click": "wlogout --protocol layer-shell"
+        "on-click": "wlogout -b 4 -c 15 --protocol layer-shell"
     },
 
     "battery": {
