@@ -1,6 +1,6 @@
 
 if [[ $(tput cols) -gt 40 && $(tput lines) -gt 6 ]]; then
-  neofetch
+  fastfetch -c ~/.config/fastfetch/custom.jsonc
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
