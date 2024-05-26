@@ -1,3 +1,14 @@
+
+(defwidget closer [window]
+  (eventbox :onclick "eww close ${window} && eww close ${window}-closer"))
+ 
+(defwindow calendar-closer
+  :monitor 0
+  :geometry (geometry :width "1600px" :height "840px")
+  :stacking "fg"
+  :focusable false
+  (closer :window "calendar"))
+
 (defwindow calendar
   :monitor 0
   :geometry (geometry :x "1269px"

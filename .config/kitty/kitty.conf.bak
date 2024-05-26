@@ -5,18 +5,18 @@ detect_urls yes
 
 mouse_hide_wait  2.0
 
-# window_padding_width 10
+window_padding_width 2
 
 font_family MesloLGM Nerd Font Regular
 bold_font MesloLGM Nerd Font Bold
 italic_font MesloLGM Nerd Font Italic
 bold_italic_font MesloLGM Nerd Font Bold Italic
 
-allow_remote_control yes
+# allow_remote_control yes
 
 
 
 # BEGIN_KITTY_THEME
-# Eldritch
+# Gruvbox Material Dark Hard
 include current-theme.conf
 # END_KITTY_THEME
