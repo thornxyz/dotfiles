@@ -27,7 +27,8 @@
 
     "clock": {
         "format":"{:%R   %A   %d-%m-%Y}",
-        "on-click-right": "eww open --toggle calendar && eww open calendar-closer"
+        "on-click": "eww open --toggle calendar && eww open calendar-closer",
+        "tooltip": false
     },
 
     "custom/power": {
